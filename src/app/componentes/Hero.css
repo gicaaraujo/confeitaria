@@ -1,0 +1,51 @@
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/fundo.png');
+    background-size: 100% 100%;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 50%;
+    min-width: 350px;
+    padding-left: 100px;
+}
+
+.hero-title{
+    font-size: 3rem;
+    font-weight: 300;
+    color: #ec4899;
+}
+
+.hero-subtitle{
+    font-size: 3rem;
+    color: #fc0062;
+    font-family: "Pacifico", cursive;
+}
+
+.hero-phrase{
+    color: #189de1;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    max-width: 500px;
+}
+
+.hero-desription{
+    display: block;
+    font-size: 1.6rem;
+    color: #529acc;
+    margin-top: 0.5rem;
+}
+
+.hero-image{
+    display: flex;
+    width: 50%;
+    padding: 30px;
+    margin-top: 10px;
+}
