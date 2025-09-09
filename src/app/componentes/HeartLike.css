@@ -1,0 +1,39 @@
+.likeBubble {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #F45162;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  color: white;
+  gap: 3px;
+}
+
+.likeBubble:hover {
+  background: #db2777;
+}
+
+.likeBubble:hover::after {
+  background: #db2777;
+}
+
+.likeBubble::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 10px;
+  transform: translateX(-50%) rotate(-40deg);
+  width: 8px;
+  height: 8px;
+  background: #F45162;
+  border-radius: 2px;
+}
+
+.counter {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #ffffff;
+  pointer-events: none;
+}

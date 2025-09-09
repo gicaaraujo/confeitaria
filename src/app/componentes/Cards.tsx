@@ -1,7 +1,11 @@
+'use client'
 import "./Cards.css";
 import { boloDePote } from "../data/produtos";
+import HeartLike from "./HeartLike";
+import useAlert from "../hooks/useAlerts";
 
 export default function Cards(){
+  const{ ConfirmAlert, doubleAlert } = useAlert();
     return(
       <section className="cards-section">
         <h1 className="cards-title">BOLOS DE POTE</h1>
@@ -13,10 +17,13 @@ export default function Cards(){
                     </div>
                     <div className="card-content">
                         <div>
-                            <h3 className="card-title">{product.title}</h3>
+                           <div className="texto-btn">
+                              <h3 className="card-title">{product.title}</h3>
+                            <HeartLike initialCount={product.like}/>
+                           </div>
                             <p className="card-description"> {product.description}</p>
                         </div>
-                        <button className="card-button"> Comprar: {product.price}</button>
+                        <button className="card-button" onClick={()=> doubleAlert()}> Comprar: {product.price}</button>
                     </div>
                 </div>
               ))}
